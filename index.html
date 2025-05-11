@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>listaJS 2</title>
+</head>
+<body>
+    <h1>Lista <span>JavaScript 2</span></h1>
+
+    <section>
+        <div class="calc-box">
+            <label for="">PRIMEIRO NÚMERO</label><br>
+            <input type="number" name="num1" id="num1">
+
+            <label for="">SEGUNDO NÚMERO</label><br>
+            <input type="number" name="num2" id="num2">
+
+            <button onclick="calcMedia()">
+                CALCULAR
+            </button>
+
+            <br>
+            <br>
+
+            <label for="" id="outMedia"></label>
+
+
+        </div>
+        <div class="title-box">
+            <h2>MÉDIA<br>ARITMÉTICA</h2>
+        </div>
+    </section>
+
+    <section>
+        <div class="title-box">
+            <h2>POTÊNCIA<br>MATH.POW</h2>
+        </div>
+        <div class="calc-box">
+            <button onclick="pow()">
+                CLIQUE AQUI
+            </button>
+
+            <br>
+            <br>
+            
+            <label for="" id="outPow"></label>
+        </div>
+    </section>
+
+    <section>
+        <div class="calc-box">
+            <label for="">DIGITE UM ANO</label><br>
+            <input type="number" name="ano" id="ano">
+
+            <button onclick="bissexto()">
+                É BISSEXTO?
+            </button>
+
+            <br>
+            <br>
+
+            <label for="" id="outBissexto"></label>
+
+
+        </div>
+        <div class="title-box">
+            <h2>ANO<br>BISSEXTO</h2>
+        </div>
+    </section>
+
+    <section>
+        <div class="title-box">
+            <h2>PAGAMENTO<br>+DESCONTOS</h2>
+        </div>
+        <div class="calc-box">
+            <label for="">VALOR UNITARIO</label><br>
+            <input type="number" name="valUnit" id="valUnit">
+
+            <label for="">QUANTIDADE</label><br>
+            <input type="number" name="quant" id="quant">
+
+            <label for="">FORMA DE PAGAEMENTO</label><br>
+                <input type="radio" id="pix" name="pagamento" value="pix">
+                <label for="html">PIX</label><br>
+                <input type="radio" id="debito" name="pagamento" value="debito">
+                <label for="css">DÉBITO</label><br>
+                <input type="radio" id="credito" name="pagamento" value="credito">
+                <label for="javascript">CRÉDITO</label>
+
+            <br>
+            <br>
+
+            <button onclick="calcPagamento()">
+                CALCULAR
+            </button>
+
+            <p id="resultado">resposta</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="calc-box">
+            <label for="">DIGITE SUA NOTA</label><br>
+            <input type="number" name="nota" id="nota" min="0" max="10">
+
+            <button onclick="classNota()">
+                VERIFICAR
+            </button>
+
+            <br><br>
+
+            <label for="" id="outNota"></label>
+
+        </div>
+        <div class="title-box">
+            <h2>CLASSIFIC.<br>DE NOTA</h2>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
